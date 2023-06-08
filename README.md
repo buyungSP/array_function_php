@@ -40,10 +40,11 @@ Syntax
 >array_change_key_case(array, case)
 
 Parameter Values
-|Parameter|Description|
-|array Wajib.|Menentukan array yang akan digunakan|
-|case Opsional.|Nilai yang mungkin:|
-||<ul><li>**CASE_LOWER** - Nilai default. Mengubah kunci menjadi huruf kecil</li><li>**CASE_UPPER** - Mengubah kunci menjadi huruf besar</li></ul>|
+| Parameter | Description |
+| --------- | --------- |
+| array Wajib. | Menentukan array yang akan digunakan |
+| case Opsional. |Nilai yang mungkin: |
+| | <ul><li>**CASE_LOWER** - Nilai default. Mengubah kunci menjadi huruf kecil</li><li>**CASE_UPPER** - Mengubah kunci menjadi huruf besar</li></ul> |
 
 array_key_exists()
 ------
@@ -53,13 +54,28 @@ Syntax
 >array_key_exists(kunci, array)
 
 Nilai Parameter
-|Parameter|Deskripsi|
-|kunci Diperlukan.|Menentukan kunci|
-|array Diperlukan.|Menentukan sebuah array|
+| Parameter | Deskripsi |
+| --------- | --------- |
+| kunci Diperlukan. | Menentukan kunci |
+| array Diperlukan. | Menentukan sebuah array |
 
 array_keys()
 ------
 >Mengembalikan semua kunci dari sebuah array
+
+Syntax
+>array_keys(array, value, strict)
+
+Nilai Parameter
+| Parameter | Deskripsi |
+| --------- | --------- |
+| array Wajib. | Menentukan sebuah array |
+| value Pilihan. | Anda dapat menentukan nilai, maka hanya kunci dengan nilai ini yang akan dikembalikan |
+| strict Pilihan. | Digunakan dengan parameter nilai. Nilai yang mungkin: |
+| | <ul><li>**true** - Mengembalikan kunci dengan nilai yang ditentukan, tergantung pada tipe: angka 5 tidak sama dengan string "5".</li><li>**false** - Nilai default. Tidak tergantung pada tipe, angka 5 sama dengan string "5".</li></ul> |
+
+
+
 
 array_chunk()
 ------
