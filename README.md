@@ -1,12 +1,35 @@
+Membuat
+######
+
 array()
 ------
 >Membuat sebuah array
 
-Syntax for indexed arrays:
->array(value1, value2, value3, etc.)
+Syntax
 
-Syntax for associative arrays: 
->array(key=>value,key=>value,key=>value,etc.)
+Syntax untuk array terindeks:
+>array(nilai1, nilai2, nilai3, dll.)
+
+Syntax untuk array asosiatif:
+>array(kunci=>nilai, kunci=>nilai, kunci=>nilai, dll.)
+
+Nilai Parameter
+|Parameter|Keterangan|
+|kunci|Menentukan kunci (numerik atau string)|
+|nilai|Menentukan nilai|
+
+array_combine()
+------
+>Membuat sebuah array dengan menggunakan elemen dari array "keys" dan array "values"
+
+Syntax
+>array_combine(kunci, nilai)
+
+Nilai Parameter
+|Parameter|Keterangan|
+|kunci Dibutuhkan.|Array kunci|
+|nilai Dibutuhkan.|Array nilai|
+
 
 array_change_key_case()
 ------
@@ -16,13 +39,19 @@ Syntax
 >array_change_key_case(array, case)
 
 Parameter Values
-
 |Parameter|Description|
 | ----------- | ----------- |
 |array | Required. Specifies the array to use|
 |case | Optional. Possible values:|
-| |- [x] CASE_LOWER - Default value. Changes the keys to lowercase|
-| |- [x] CASE_UPPER - Changes the keys to uppercase|
+| |<ul><li>CASE_LOWER - Default value. Changes the keys to lowercase</li><li>CASE_UPPER - Changes the keys to uppercase</li></ul>|
+
+array_key_exists()
+------
+>Memeriksa apakah kunci yang ditentukan ada dalam array
+
+array_keys()
+------
+>Mengembalikan semua kunci dari sebuah array
 
 array_chunk()
 ------
@@ -32,33 +61,11 @@ array_column()
 ------
 >Mengembalikan nilai dari sebuah kolom tunggal dalam array input
 
-array_combine()
-------
->Membuat sebuah array dengan menggunakan elemen dari array "keys" dan array "values"
-
 array_count_values()
 ------
 >Menghitung jumlah nilai dari sebuah array
 
-array_diff()
-------
->Membandingkan dua array, dan mengembalikan perbedaan (membandingkan hanya nilai)
 
-array_diff_assoc()
-------
->Membandingkan dua array, dan mengembalikan perbedaan (membandingkan kunci dan nilai)
-
-array_diff_key()
-------
->Membandingkan dua array, dan mengembalikan perbedaan (membandingkan hanya kunci)
-
-array_diff_uassoc()
-------
->Membandingkan dua array, dan mengembalikan perbedaan (membandingkan kunci dan nilai, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
-
-array_diff_ukey()
-------
->Membandingkan dua array, dan mengembalikan perbedaan (membandingkan hanya kunci, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
 
 array_fill()
 ------
@@ -76,34 +83,6 @@ array_flip()
 ------
 >Membalikkan/menukar semua kunci dengan nilai yang terkait dalam sebuah array
 
-array_intersect()
-------
->Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya nilai)
-
-array_intersect_assoc()
-------
->Membandingkan dua array, dan mengembalikan kesamaan (membandingkan kunci dan nilai)
-
-array_intersect_key()
-------
->Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya kunci)
-
-array_intersect_uassoc()
-------
->Membandingkan dua array, dan mengembalikan kesamaan (membandingkan kunci dan nilai, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
-
-array_intersect_ukey()
-------
->Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya kunci, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
-
-array_key_exists()
-------
->Memeriksa apakah kunci yang ditentukan ada dalam array
-
-array_keys()
-------
->Mengembalikan semua kunci dari sebuah array
-
 array_map()
 ------
 >Mengirim setiap nilai dari sebuah array ke sebuah fungsi buatan pengguna, yang mengembalikan nilai baru
@@ -115,10 +94,6 @@ array_merge()
 array_merge_recursive()
 ------
 >Menggabungkan satu atau lebih array menjadi sebuah array secara rekursif
-
-array_multisort()
-------
->Mengurutkan beberapa atau multidimensional array
 
 array_pad()
 ------
@@ -164,6 +139,10 @@ array_shift()
 ------
 >Menghapus elemen pertama dari sebuah array, dan mengembalikan nilai dari elemen yang dihapus
 
+array_unshift()
+------
+>Menambahkan satu atau lebih elemen ke awal sebuah array
+
 array_slice()
 ------
 >Mengembalikan bagian terpilih dari sebuah array
@@ -175,37 +154,10 @@ array_splice()
 array_sum()
 ------
 >Mengembalikan jumlah dari nilai-nilai dalam sebuah array
-array_udiff()
-------
->Membandingkan dua array, dan mengembalikan perbedaan (membandingkan hanya nilai, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
-
-array_udiff_assoc()
-------
->Membandingkan dua array, dan mengembalikan perbedaan (membandingkan kunci dan nilai, menggunakan fungsi bawaan untuk membandingkan kunci dan fungsi pembanding nilai yang ditentukan pengguna)
-
-array_udiff_uassoc()
-------
->Membandingkan dua array, dan mengembalikan perbedaan (membandingkan kunci dan nilai, menggunakan dua fungsi pembanding kunci yang ditentukan pengguna)
-
-array_uintersect()
-------
->Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya nilai, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
-
-array_uintersect_assoc()
-------
->Membandingkan dua array, dan mengembalikan kesamaan (membandingkan kunci dan nilai, menggunakan fungsi bawaan untuk membandingkan kunci dan fungsi pembanding nilai yang ditentukan pengguna)
-
-array_uintersect_uassoc()
-------
->Membandingkan dua array, dan mengembalikan kesamaan (membandingkan kunci dan nilai, menggunakan dua fungsi pembanding kunci yang ditentukan pengguna)
 
 array_unique()
 ------
 >Menghapus nilai-nilai duplikat dari sebuah array
-
-array_unshift()
-------
->Menambahkan satu atau lebih elemen ke awal sebuah array
 
 array_values()
 ------
@@ -219,57 +171,82 @@ array_walk_recursive()
 ------
 >Menerapkan sebuah fungsi buatan pengguna secara rekursif ke setiap anggota dari sebuah array
 
-arsort()
-------
->Mengurutkan sebuah array asosiatif secara menurun, berdasarkan nilai
 
-asort()
-------
->Mengurutkan sebuah array asosiatif secara menaik, berdasarkan nilai
 
-compact()
-------
->Membuat sebuah array yang berisi variabel-variabel dan nilai-nilainya
 
-count()
-------
->Mengembalikan jumlah elemen dalam sebuah array
+Membandingkan
+######
 
-current()
+array_diff()
 ------
->Mengembalikan elemen saat ini dari sebuah array
+>Membandingkan dua array, dan mengembalikan perbedaan (membandingkan hanya nilai)
 
-each()
+array_udiff()
 ------
->Ditolak dari PHP 7.2. Mengembalikan pasangan kunci dan nilai saat ini dari sebuah array
+>Membandingkan dua array, dan mengembalikan perbedaan (membandingkan hanya nilai, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
 
-end()
+array_diff_assoc()
 ------
->Mengatur pointer internal dari sebuah array ke elemen terakhirnya
+>Membandingkan dua array, dan mengembalikan perbedaan (membandingkan kunci dan nilai)
 
-extract()
+array_diff_uassoc()
 ------
->Mengimpor variabel-variabel ke dalam tabel simbol saat ini dari sebuah array
+>Membandingkan dua array, dan mengembalikan perbedaan (membandingkan kunci dan nilai, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
 
-in_array()
+array_udiff_assoc()
 ------
->Memeriksa apakah sebuah nilai tertentu ada dalam sebuah array
+>Membandingkan dua array, dan mengembalikan perbedaan (membandingkan kunci dan nilai, menggunakan fungsi bawaan untuk membandingkan kunci dan fungsi pembanding nilai yang ditentukan pengguna)
 
-key()
+array_udiff_uassoc()
 ------
->Mengambil sebuah kunci dari sebuah array
+>Membandingkan dua array, dan mengembalikan perbedaan (membandingkan kunci dan nilai, menggunakan dua fungsi pembanding kunci yang ditentukan pengguna)
 
-krsort()
+array_diff_key()
 ------
->Mengurutkan sebuah array asosiatif secara menurun, berdasarkan kunci
+>Membandingkan dua array, dan mengembalikan perbedaan (membandingkan hanya kunci)
 
-ksort()
+array_diff_ukey()
 ------
->Mengurutkan sebuah array asosiatif secara menaik, berdasarkan kunci
+>Membandingkan dua array, dan mengembalikan perbedaan (membandingkan hanya kunci, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
 
-list()
+array_intersect()
 ------
->Memberikan nilai-nilai variabel seolah-olah mereka adalah sebuah array
+>Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya nilai)
+
+array_uintersect()
+------
+>Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya nilai, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
+
+array_intersect_assoc()
+------
+>Membandingkan dua array, dan mengembalikan kesamaan (membandingkan kunci dan nilai)
+
+array_intersect_uassoc()
+------
+>Membandingkan dua array, dan mengembalikan kesamaan (membandingkan kunci dan nilai, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
+
+array_uintersect_assoc()
+------
+>Membandingkan dua array, dan mengembalikan kesamaan (membandingkan kunci dan nilai, menggunakan fungsi bawaan untuk membandingkan kunci dan fungsi pembanding nilai yang ditentukan pengguna)
+
+array_uintersect_uassoc()
+------
+>Membandingkan dua array, dan mengembalikan kesamaan (membandingkan kunci dan nilai, menggunakan dua fungsi pembanding kunci yang ditentukan pengguna)
+
+array_intersect_key()
+------
+>Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya kunci)
+
+array_intersect_ukey()
+------
+>Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya kunci, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
+
+Mengurutkan
+######
+
+array_multisort()
+------
+>Mengurutkan beberapa atau multidimensional array
 
 natcasesort()
 ------
@@ -279,50 +256,108 @@ natsort()
 ------
 >Mengurutkan sebuah array menggunakan algoritma "natural order"
 
-next()
+sort()
 ------
->Maju ke elemen berikutnya dari sebuah array
+>Mengurutkan sebuah array indeks secara menaik
 
-pos()
+asort()
 ------
->Alias dari current()
-
-prev()
-------
->Mundurkan pointer internal sebuah array
-
-range()
-------
->Membuat sebuah array yang berisi rentang elemen
-
-reset()
-------
->Mengatur pointer internal dari sebuah array ke elemen pertamanya
+>Mengurutkan sebuah array asosiatif secara menaik, berdasarkan nilai
 
 rsort()
 ------
 >Mengurutkan sebuah array indeks secara menurun
 
-shuffle()
+usort()
 ------
->Mengacak sebuah array
+>Mengurutkan sebuah array berdasarkan nilai menggunakan sebuah fungsi pembanding yang ditentukan pengguna
 
-sizeof()
+ksort()
 ------
->Alias dari count()
+>Mengurutkan sebuah array asosiatif secara menaik, berdasarkan kunci
 
-sort()
+krsort()
 ------
->Mengurutkan sebuah array indeks secara menaik
-
-uasort()
-------
->Mengurutkan sebuah array berdasarkan nilai menggunakan sebuah fungsi pembanding yang ditentukan pengguna dan mempertahankan asosiasi indeks
+>Mengurutkan sebuah array asosiatif secara menurun, berdasarkan kunci
 
 uksort()
 ------
 >Mengurutkan sebuah array berdasarkan kunci menggunakan sebuah fungsi pembanding yang ditentukan pengguna
 
-usort()
+arsort()
 ------
->Mengurutkan sebuah array berdasarkan nilai menggunakan sebuah fungsi pembanding yang ditentukan pengguna
+>Mengurutkan sebuah array asosiatif secara menurun, berdasarkan nilai
+
+uasort()
+------
+>Mengurutkan sebuah array berdasarkan nilai menggunakan sebuah fungsi pembanding yang ditentukan pengguna dan mempertahankan asosiasi indeks
+
+
+
+
+
+
+
+compact()
+------
+>Membuat sebuah array yang berisi variabel-variabel dan nilai-nilainya
+
+range()
+------
+>Membuat sebuah array yang berisi rentang elemen
+
+key()
+------
+>Mengambil sebuah kunci dari sebuah array
+
+each()
+------
+>Ditolak dari PHP 7.2. Mengembalikan pasangan kunci dan nilai saat ini dari sebuah array
+
+extract()
+------
+>Mengimpor variabel-variabel ke dalam tabel simbol saat ini dari sebuah array
+
+in_array()
+------
+>Memeriksa apakah sebuah nilai tertentu ada dalam sebuah array
+
+list()
+------
+>Memberikan nilai-nilai variabel seolah-olah mereka adalah sebuah array
+
+count()
+------
+>Mengembalikan jumlah elemen dalam sebuah array
+
+sizeof()
+------
+>Alias dari count()
+
+current()
+------
+>Mengembalikan elemen saat ini dari sebuah array
+
+pos()
+------
+>Alias dari current()
+
+end()
+------
+>Mengatur pointer internal dari sebuah array ke elemen terakhirnya
+
+next()
+------
+>Maju ke elemen berikutnya dari sebuah array
+
+prev()
+------
+>Mundurkan pointer internal sebuah array
+
+reset()
+------
+>Mengatur pointer internal dari sebuah array ke elemen pertamanya
+
+shuffle()
+------
+>Mengacak sebuah array
