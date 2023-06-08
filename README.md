@@ -2,9 +2,27 @@ array()
 ------
 >Membuat sebuah array
 
+Syntax for indexed arrays:
+>array(value1, value2, value3, etc.)
+
+Syntax for associative arrays: 
+>array(key=>value,key=>value,key=>value,etc.)
+
 array_change_key_case()
 ------
 >Mengubah semua kunci dalam array menjadi huruf kecil atau besar
+
+Syntax
+>array_change_key_case(array, case)
+
+Parameter Values
+
+|Parameter|Description|
+| ----------- | ----------- |
+|array | Required. Specifies the array to use|
+|case | Optional. Possible values:|
+| |- [x] CASE_LOWER - Default value. Changes the keys to lowercase|
+| |- [x] CASE_UPPER - Changes the keys to uppercase|
 
 array_chunk()
 ------
