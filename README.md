@@ -6,8 +6,15 @@ array()
 ------
 > Membuat sebuah array
 
-Syntax
+Fungsi array() digunakan untuk membuat array.
 
+Di PHP, ada tiga jenis array:
+
+- Array indeks - Array dengan indeks numerik
+- Array asosiatif - Array dengan kunci bernama
+- Array multidimensi - Array yang berisi satu atau lebih array.
+
+Syntax
 Syntax untuk array terindeks:
 > array(nilai1, nilai2, nilai3, dll.)
 
@@ -23,6 +30,10 @@ Syntax untuk array asosiatif:
 array_combine()
 ------
 > Membuat sebuah array dengan menggunakan elemen dari array "keys" dan array "values"
+
+Fungsi array_combine () membuat array dengan menggunakan elemen dari satu array "keys" dan satu array "values".
+
+Catatan: Kedua array harus memiliki jumlah elemen yang sama!
 
 Syntax
 > array_combine(kunci, nilai)
@@ -105,61 +116,178 @@ array_column()
 ------
 > Mengembalikan nilai dari sebuah kolom tunggal dalam array input
 
+Syntax
+> array_column(array, column_key, index_key)
+> 
+> **array** ___wajib___
+> - Menentukan array multi-dimensi (record-set) yang akan digunakan. Mulai PHP 7.0, ini juga dapat berupa array objek.
+> 
+> **column_key** ___wajib___
+> - Kunci integer atau nama kunci string dari kolom nilai yang akan dikembalikan. Parameter ini juga dapat berupa NULL untuk mengembalikan array lengkap (berguna bersama dengan index_key untuk mengindeks ulang array)
+> 
+> **index_key** ___opsional___
+> - Kolom yang akan digunakan sebagai indeks/kunci untuk array yang dikembalikan
+
 array_count_values()
 ------
 > Menghitung jumlah nilai dari sebuah array
+
+Syntax
+> array_count_values(array)
+> 
+> **array** ___wajib___
+> - Menentukan array yang akan dihitung nilai-nilainya.
 
 array_fill()
 ------
 > Mengisi sebuah array dengan nilai tertentu
 
+Syntax
+array_fill(index, jumlah, nilai)
+Nilai Parameter
+Parameter Deskripsi
+index Dibutuhkan. Indeks pertama dari array yang akan dikembalikan
+jumlah Dibutuhkan. Menentukan jumlah elemen yang akan dimasukkan
+nilai Dibutuhkan. Menentukan nilai yang akan digunakan untuk mengisi array
+
 array_fill_keys()
 ------
 > Mengisi sebuah array dengan nilai tertentu, dengan menentukan kunci
+
+Syntax
+array_fill_keys(kunci, nilai)
+Nilai Parameter
+Parameter Keterangan
+kunci Wajib. Array dari nilai-nilai yang akan digunakan sebagai kunci
+nilai Wajib. Menentukan nilai yang akan digunakan untuk mengisi array
 
 array_filter()
 ------
 > Menyaring nilai-nilai dari sebuah array menggunakan fungsi callback
 
+Syntax
+array_filter(array, callbackfunction, flag)
+Nilai Parameter
+Parameter Keterangan
+array Wajib. Menentukan array yang akan difilter
+callbackfunction Opsional. Menentukan fungsi callback yang akan digunakan
+flag Opsional. Menentukan argumen apa yang akan dikirim ke callback:
+ARRAY_FILTER_USE_KEY - kirim kunci sebagai satu-satunya argumen ke callback (bukan nilai)
+ARRAY_FILTER_USE_BOTH - kirim baik nilai maupun kunci sebagai argumen ke callback (bukan nilai)
+
 array_flip()
 ------
 > Membalikkan/menukar semua kunci dengan nilai yang terkait dalam sebuah array
+
+Syntax
+array_flip(array)
+Parameter Values
+Parameter Description
+array Diperlukan. Menentukan sebuah array pasangan kunci/nilai yang akan dibalikkan.
 
 array_map()
 ------
 > Mengirim setiap nilai dari sebuah array ke sebuah fungsi buatan pengguna, yang mengembalikan nilai baru
 
+Syntax
+array_map(myfunction, array1, array2, array3, ...)
+Nilai Parameter
+Parameter Keterangan
+myfunction Wajib. Nama fungsi buatan pengguna, atau null
+array1 Wajib. Menentukan sebuah array
+array2 Pilihan. Menentukan sebuah array
+array3 Pilihan. Menentukan sebuah array
+
 array_merge()
 ------
 > Menggabungkan satu atau lebih array menjadi sebuah array
+
+Syntax
+array_merge(array1, array2, array3, ...)
+Nilai Parameter
+Parameter Keterangan
+array1 Wajib. Menentukan sebuah array
+array2 Pilihan. Menentukan sebuah array
+array3,... Pilihan. Menentukan sebuah array lainnya
 
 array_merge_recursive()
 ------
 > Menggabungkan satu atau lebih array menjadi sebuah array secara rekursif
 
+Syntax
+array_merge_recursive(array1, array2, array3, ...)
+Nilai Parameter
+Parameter Keterangan
+array1 Wajib. Menentukan sebuah array
+array2 Pilihan. Menentukan sebuah array
+array3,... Pilihan. Menentukan sebuah array
+
 array_pad()
 ------
 > Menyisipkan sejumlah item yang ditentukan, dengan nilai tertentu, ke dalam sebuah array
+
+Syntax
+array_pad(array, size, value)
+Parameter Values
+Parameter Description
+array Diperlukan. Menentukan sebuah array
+size Diperlukan. Menentukan jumlah elemen dalam array yang dihasilkan dari fungsi
+value Diperlukan. Menentukan nilai elemen-elemen baru dalam array yang dihasilkan dari fungsi
 
 array_pop()
 ------
 > Menghapus elemen terakhir dari sebuah array
 
+Syntax
+> array_count_values(array)
+> 
+> **array** ___wajib___
+> - Menentukan array yang akan dihitung nilai-nilainya.
+
 array_product()
 ------
 > Menghitung hasil kali dari nilai-nilai dalam sebuah array
+
+Syntax
+> array_count_values(array)
+> 
+> **array** ___wajib___
+> - Menentukan array yang akan dihitung nilai-nilainya.
 
 array_push()
 ------
 > Menyisipkan satu atau lebih elemen ke akhir sebuah array
 
+Syntax
+array_push(array, value1, value2, ...)
+Parameter Values
+Parameter Description
+array Diperlukan. Menentukan array
+value1 Tidak wajib. Menentukan nilai yang akan ditambahkan (Diperlukan pada versi PHP sebelum 7.3)
+value2 Tidak wajib. Menentukan nilai yang akan ditambahkan.
+
 array_rand()
 ------
 > Mengembalikan satu atau lebih kunci acak dari sebuah array
 
+Syntax
+array_rand(array, number)
+Nilai Parameter
+Parameter Deskripsi
+array Diperlukan. Menentukan array
+number Pilihan. Menentukan berapa banyak kunci acak yang akan dikembalikan
+
 array_reduce()
 ------
 > Mengembalikan sebuah array sebagai sebuah string, dengan menggunakan fungsi yang ditentukan pengguna
+
+Syntax
+array_reduce(array, myfunction, initial)
+Nilai Parameter
+Parameter Keterangan
+array Wajib. Menentukan array
+myfunction Wajib. Menentukan nama fungsi
+initial Opsional. Menentukan nilai awal yang akan dikirimkan ke fungsi
 
 array_replace()
 ------
