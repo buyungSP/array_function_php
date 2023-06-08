@@ -27,6 +27,8 @@ Syntax untuk array asosiatif:
 > **nilai**
 > - Menentukan nilai
 
+![array()](/img/img1.png "array()").
+
 array_combine()
 ------
 > Membuat sebuah array dengan menggunakan elemen dari array "keys" dan array "values"
