@@ -1,3 +1,5 @@
+------
+
 ###### Membuat
 
 array()
@@ -13,10 +15,10 @@ Syntax untuk array asosiatif:
 >array(kunci=>nilai, kunci=>nilai, kunci=>nilai, dll.)
 
 **kunci**
-:Menentukan kunci (numerik atau string)
+- Menentukan kunci (numerik atau string)
 
 **nilai**
-:Menentukan nilai
+- Menentukan nilai
 
 array_combine()
 ------
@@ -26,10 +28,12 @@ Syntax
 >array_combine(kunci, nilai)
 
 **kunci** ___wajib___
-:Array kunci
+- Array kunci
 
 **nilai** ___wajib___
-:Array nilai
+- Array nilai
+
+------
 
 Key
 ######
@@ -42,10 +46,10 @@ Syntax
 >array_change_key_case(array, case)
 
 **array** ___wajib___
-:Menentukan array yang akan digunakan
+- Menentukan array yang akan digunakan
 
 **case** ___opsional___
-:Nilai yang mungkin
+- Nilai yang mungkin
 	- **CASE_LOWER** - Nilai default. Mengubah kunci menjadi huruf kecil
 	- **CASE_UPPER** - Mengubah kunci menjadi huruf besar
 
@@ -56,11 +60,11 @@ array_key_exists()
 Syntax
 >array_key_exists(kunci, array)
 
-Nilai Parameter
-| Parameter | Deskripsi |
-| --------- | --------- |
-| kunci Diperlukan. | Menentukan kunci |
-| array Diperlukan. | Menentukan sebuah array |
+**kunci** ___wajib___
+- Menentukan kunci
+
+**array** ___wajib___
+- Menentukan kunci
 
 array_keys()
 ------
