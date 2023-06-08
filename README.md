@@ -46,6 +46,9 @@ Syntax
 > **nilai** ___wajib___
 > - Array nilai
 
+![array_combine()](/img/img2.png "array_combine()").
+
+
 ------
 
 # Key
@@ -67,6 +70,8 @@ Syntax
 > 	- **CASE_LOWER** - Nilai **Default**. Mengubah kunci menjadi huruf kecil
 > 	- **CASE_UPPER** - Mengubah kunci menjadi huruf besar
 
+![array_change_key_case()](/img/img3.png "array_change_key_case()").
+
 array_key_exists()
 ------
 > Memeriksa apakah kunci yang ditentukan ada dalam array
@@ -83,6 +88,8 @@ Syntax
 > 
 > **array** ___wajib___
 > - Menentukan kunci
+
+![array_key_exists()](/img/img4.png "array_key_exists()").
 
 array_keys()
 ------
