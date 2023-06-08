@@ -1,6 +1,6 @@
 ------
 
-###### Membuat
+# Membuat
 
 array()
 ------
@@ -35,8 +35,7 @@ Syntax
 
 ------
 
-Key
-######
+# Key
 
 array_change_key_case()
 ------
@@ -73,15 +72,16 @@ array_keys()
 Syntax
 >array_keys(array, value, strict)
 
-Nilai Parameter
-| Parameter | Deskripsi |
-| --------- | --------- |
-| array Wajib. | Menentukan sebuah array |
-| value Pilihan. | Anda dapat menentukan nilai, maka hanya kunci dengan nilai ini yang akan dikembalikan |
-| strict Pilihan. | Digunakan dengan parameter nilai. Nilai yang mungkin: |
-| | <ul><li>**true** - Mengembalikan kunci dengan nilai yang ditentukan, tergantung pada tipe: angka 5 tidak sama dengan string "5".</li><li>**false** - Nilai default. Tidak tergantung pada tipe, angka 5 sama dengan string "5".</li></ul> |
+**array** ___wajib___
+- Menentukan sebuah array
 
+**value** ___opsional___
+- Anda dapat menentukan nilai, maka hanya kunci dengan nilai ini yang akan dikembalikan
 
+**strict** ___opsional___
+- Digunakan dengan parameter nilai. Nilai yang mungkin
+	- **true** - Mengembalikan kunci dengan nilai yang ditentukan, tergantung pada tipe: angka 5 tidak sama dengan string "5".
+	- **false** - Nilai default. Tidak tergantung pada tipe, angka 5 sama dengan string "5".
 
 
 array_chunk()
@@ -91,13 +91,16 @@ array_chunk()
 Syntax
 >array_chunk(array, size, preserve_key)
 
-Parameter Values
-| Parameter | Description |
-| --------- | --------- |
-| array Diperlukan. | Menentukan array yang akan digunakan |
-| size Diperlukan. | Sebuah bilangan bulat yang menentukan ukuran setiap potongan |
-| preserve_key Pilihan. | Nilai yang mungkin: |
-| | <ul><li>**true** - Menjaga kunci</li><li>**false** - Default. Mengindeks ulang potongan secara numerik</li></ul> |
+**array** ___wajib___
+- Menentukan array yang akan digunakan
+
+**size** ___wajib___
+- Sebuah bilangan bulat yang menentukan ukuran setiap potongan
+
+**preserve_key** ___opsional___
+- Nilai yang mungkin
+	- **true** - Menjaga kunci
+	- **false** - Default. Mengindeks ulang potongan secara numerik
 
 array_column()
 ------
@@ -214,8 +217,7 @@ array_walk_recursive()
 
 
 
-Membandingkan
-######
+# Membandingkan
 
 array_diff()
 ------
@@ -281,8 +283,7 @@ array_intersect_ukey()
 ------
 >Membandingkan dua array, dan mengembalikan kesamaan (membandingkan hanya kunci, menggunakan fungsi pembanding kunci yang ditentukan pengguna)
 
-Mengurutkan
-######
+# Mengurutkan
 
 array_multisort()
 ------
