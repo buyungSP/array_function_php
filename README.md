@@ -12,10 +12,11 @@ Syntax untuk array terindeks:
 Syntax untuk array asosiatif:
 >array(kunci=>nilai, kunci=>nilai, kunci=>nilai, dll.)
 
-Nilai Parameter
-|Parameter|Keterangan|
-|kunci|Menentukan kunci (numerik atau string)|
-|nilai|Menentukan nilai|
+**kunci**
+:Menentukan kunci (numerik atau string)
+
+**nilai**
+:Menentukan nilai
 
 array_combine()
 ------
@@ -24,10 +25,11 @@ array_combine()
 Syntax
 >array_combine(kunci, nilai)
 
-Nilai Parameter
-|Parameter|Keterangan|
-|kunci Dibutuhkan.|Array kunci|
-|nilai Dibutuhkan.|Array nilai|
+**kunci** ___wajib___
+:Array kunci
+
+**nilai** ___wajib___
+:Array nilai
 
 Key
 ######
@@ -39,12 +41,13 @@ array_change_key_case()
 Syntax
 >array_change_key_case(array, case)
 
-Parameter Values
-| Parameter | Description |
-| --------- | --------- |
-| array Wajib. | Menentukan array yang akan digunakan |
-| case Opsional. |Nilai yang mungkin: |
-| | <ul><li>**CASE_LOWER** - Nilai default. Mengubah kunci menjadi huruf kecil</li><li>**CASE_UPPER** - Mengubah kunci menjadi huruf besar</li></ul> |
+**array** ___wajib___
+:Menentukan array yang akan digunakan
+
+**case** ___opsional___
+:Nilai yang mungkin
+	- **CASE_LOWER** - Nilai default. Mengubah kunci menjadi huruf kecil
+	- **CASE_UPPER** - Mengubah kunci menjadi huruf besar
 
 array_key_exists()
 ------
@@ -81,6 +84,17 @@ array_chunk()
 ------
 >Memecah sebuah array menjadi beberapa bagian array
 
+Syntax
+>array_chunk(array, size, preserve_key)
+
+Parameter Values
+| Parameter | Description |
+| --------- | --------- |
+| array Diperlukan. | Menentukan array yang akan digunakan |
+| size Diperlukan. | Sebuah bilangan bulat yang menentukan ukuran setiap potongan |
+| preserve_key Pilihan. | Nilai yang mungkin: |
+| | <ul><li>**true** - Menjaga kunci</li><li>**false** - Default. Mengindeks ulang potongan secara numerik</li></ul> |
+
 array_column()
 ------
 >Mengembalikan nilai dari sebuah kolom tunggal dalam array input
@@ -88,8 +102,6 @@ array_column()
 array_count_values()
 ------
 >Menghitung jumlah nilai dari sebuah array
-
-
 
 array_fill()
 ------
