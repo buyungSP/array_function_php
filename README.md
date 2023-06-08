@@ -1,5 +1,4 @@
-Membuat
-######
+###### Membuat
 
 array()
 ------
@@ -30,6 +29,8 @@ Nilai Parameter
 |kunci Dibutuhkan.|Array kunci|
 |nilai Dibutuhkan.|Array nilai|
 
+Key
+######
 
 array_change_key_case()
 ------
@@ -40,14 +41,21 @@ Syntax
 
 Parameter Values
 |Parameter|Description|
-| ----------- | ----------- |
-|array | Required. Specifies the array to use|
-|case | Optional. Possible values:|
-| |<ul><li>CASE_LOWER - Default value. Changes the keys to lowercase</li><li>CASE_UPPER - Changes the keys to uppercase</li></ul>|
+|array Wajib.|Menentukan array yang akan digunakan|
+|case Opsional.|Nilai yang mungkin:|
+||<ul><li>**CASE_LOWER** - Nilai default. Mengubah kunci menjadi huruf kecil</li><li>**CASE_UPPER** - Mengubah kunci menjadi huruf besar</li></ul>|
 
 array_key_exists()
 ------
 >Memeriksa apakah kunci yang ditentukan ada dalam array
+
+Syntax
+>array_key_exists(kunci, array)
+
+Nilai Parameter
+|Parameter|Deskripsi|
+|kunci Diperlukan.|Menentukan kunci|
+|array Diperlukan.|Menentukan sebuah array|
 
 array_keys()
 ------
