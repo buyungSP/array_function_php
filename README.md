@@ -159,12 +159,11 @@ array_fill()
 Fungsi array_fill() mengisi sebuah array dengan nilai-nilai.
 
 Syntax
-array_fill(index, jumlah, nilai)
-Nilai Parameter
-Parameter Deskripsi
-index Dibutuhkan. Indeks pertama dari array yang akan dikembalikan
-jumlah Dibutuhkan. Menentukan jumlah elemen yang akan dimasukkan
-nilai Dibutuhkan. Menentukan nilai yang akan digunakan untuk mengisi array
+> array_fill(index, jumlah, nilai)
+> 
+> index Dibutuhkan. Indeks pertama dari array yang akan dikembalikan
+> jumlah Dibutuhkan. Menentukan jumlah elemen yang akan dimasukkan
+> nilai Dibutuhkan. Menentukan nilai yang akan digunakan untuk mengisi array
 
 array_fill_keys()
 ------
@@ -173,11 +172,10 @@ array_fill_keys()
 Fungsi array_fill_keys () mengisi sebuah array dengan nilai, dengan menentukan kunci.
 
 Syntax
-array_fill_keys(kunci, nilai)
-Nilai Parameter
-Parameter Keterangan
-kunci Wajib. Array dari nilai-nilai yang akan digunakan sebagai kunci
-nilai Wajib. Menentukan nilai yang akan digunakan untuk mengisi array
+> array_fill_keys(kunci, nilai)
+> 
+> kunci Wajib. Array dari nilai-nilai yang akan digunakan sebagai kunci
+> nilai Wajib. Menentukan nilai yang akan digunakan untuk mengisi array
 
 array_filter()
 ------
@@ -188,14 +186,13 @@ Fungsi array_filter() digunakan untuk menyaring nilai-nilai dalam sebuah array m
 Fungsi ini akan memasukkan setiap nilai dari array input ke dalam fungsi callback. Jika fungsi callback mengembalikan nilai true, maka nilai saat ini dari input akan dimasukkan ke dalam array hasil. Kunci array akan dipertahankan.
 
 Syntax
-array_filter(array, callbackfunction, flag)
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan array yang akan difilter
-callbackfunction Opsional. Menentukan fungsi callback yang akan digunakan
-flag Opsional. Menentukan argumen apa yang akan dikirim ke callback:
-ARRAY_FILTER_USE_KEY - kirim kunci sebagai satu-satunya argumen ke callback (bukan nilai)
-ARRAY_FILTER_USE_BOTH - kirim baik nilai maupun kunci sebagai argumen ke callback (bukan nilai)
+> array_filter(array, callbackfunction, flag)
+> 
+> array Wajib. Menentukan array yang akan difilter
+> callbackfunction Opsional. Menentukan fungsi callback yang akan digunakan
+> flag Opsional. Menentukan argumen apa yang akan dikirim ke callback:
+> ARRAY_FILTER_USE_KEY - kirim kunci sebagai satu-satunya argumen ke callback (bukan nilai)
+> ARRAY_FILTER_USE_BOTH - kirim baik nilai maupun kunci sebagai argumen ke callback (bukan nilai)
 
 array_flip()
 ------
@@ -204,10 +201,9 @@ array_flip()
 Fungsi array_flip() membalikkan/menukar semua kunci dengan nilai yang terkait dalam sebuah array.
 
 Syntax
-array_flip(array)
-Parameter Values
-Parameter Description
-array Diperlukan. Menentukan sebuah array pasangan kunci/nilai yang akan dibalikkan.
+> array_flip(array)
+> 
+> array Diperlukan. Menentukan sebuah array pasangan kunci/nilai yang akan dibalikkan.
 
 array_map()
 ------
@@ -218,13 +214,12 @@ Fungsi array_map () mengirimkan setiap nilai dari sebuah array ke fungsi yang di
 Tip: Anda dapat menetapkan satu array ke fungsi, atau sebanyak yang Anda inginkan.
 
 Syntax
-array_map(myfunction, array1, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-myfunction Wajib. Nama fungsi buatan pengguna, atau null
-array1 Wajib. Menentukan sebuah array
-array2 Pilihan. Menentukan sebuah array
-array3 Pilihan. Menentukan sebuah array
+> array_map(myfunction, array1, array2, array3, ...)
+> 
+> myfunction Wajib. Nama fungsi buatan pengguna, atau null
+> array1 Wajib. Menentukan sebuah array
+> array2 Pilihan. Menentukan sebuah array
+> array3 Pilihan. Menentukan sebuah array
 
 array_merge()
 ------
@@ -241,12 +236,11 @@ Catatan: Jika Anda hanya menetapkan satu array ke fungsi array_merge () dan kunc
 Tips: Perbedaan antara fungsi ini dan fungsi array_merge_recursive () adalah ketika dua atau lebih elemen array memiliki kunci yang sama. Alih-alih mengganti kunci, fungsi array_merge_recursive () membuat nilai sebagai array.
 
 Syntax
-array_merge(array1, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Menentukan sebuah array
-array2 Pilihan. Menentukan sebuah array
-array3,... Pilihan. Menentukan sebuah array lainnya
+> array_merge(array1, array2, array3, ...)
+> 
+> array1 Wajib. Menentukan sebuah array
+> array2 Pilihan. Menentukan sebuah array
+> array3,... Pilihan. Menentukan sebuah array lainnya
 
 array_merge_recursive()
 ------
@@ -259,12 +253,11 @@ Perbedaan antara fungsi ini dan fungsi array_merge() adalah ketika dua atau lebi
 Catatan: Jika Anda hanya memberikan satu array ke fungsi array_merge_recursive(), maka fungsi tersebut akan berperilaku sama persis dengan fungsi array_merge().
 
 Syntax
-array_merge_recursive(array1, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Menentukan sebuah array
-array2 Pilihan. Menentukan sebuah array
-array3,... Pilihan. Menentukan sebuah array
+> array_merge_recursive(array1, array2, array3, ...)
+> 
+> array1 Wajib. Menentukan sebuah array
+> array2 Pilihan. Menentukan sebuah array
+> array3,... Pilihan. Menentukan sebuah array
 
 array_pad()
 ------
@@ -277,12 +270,11 @@ Tip: Jika Anda memberikan parameter ukuran yang negatif, fungsi ini akan menyisi
 Catatan: Fungsi ini tidak akan menghapus elemen-elemen apapun jika parameter ukuran lebih kecil dari ukuran array asli.
 
 Syntax
-array_pad(array, size, value)
-Parameter Values
-Parameter Description
-array Diperlukan. Menentukan sebuah array
-size Diperlukan. Menentukan jumlah elemen dalam array yang dihasilkan dari fungsi
-value Diperlukan. Menentukan nilai elemen-elemen baru dalam array yang dihasilkan dari fungsi
+> array_pad(array, size, value)
+> 
+> array Diperlukan. Menentukan sebuah array
+> size Diperlukan. Menentukan jumlah elemen dalam array yang dihasilkan dari fungsi
+> value Diperlukan. Menentukan nilai elemen-elemen baru dalam array yang dihasilkan dari fungsi
 
 array_pop()
 ------
@@ -319,12 +311,11 @@ Tips: Anda dapat menambahkan satu nilai atau sebanyak yang Anda inginkan.
 Catatan: Meskipun array Anda memiliki kunci string, elemen yang ditambahkan selalu memiliki kunci numerik (lihat contoh di bawah).
 
 Syntax
-array_push(array, value1, value2, ...)
-Parameter Values
-Parameter Description
-array Diperlukan. Menentukan array
-value1 Tidak wajib. Menentukan nilai yang akan ditambahkan (Diperlukan pada versi PHP sebelum 7.3)
-value2 Tidak wajib. Menentukan nilai yang akan ditambahkan.
+> array_push(array, value1, value2, ...)
+> 
+> array Diperlukan. Menentukan array
+> value1 Tidak wajib. Menentukan nilai yang akan ditambahkan (Diperlukan pada versi PHP sebelum 7.3)
+> value2 Tidak wajib. Menentukan nilai yang akan ditambahkan.
 
 array_rand()
 ------
@@ -333,11 +324,10 @@ array_rand()
 Fungsi array_rand() mengembalikan kunci acak dari sebuah array, atau mengembalikan array dari kunci acak jika Anda menentukan bahwa fungsi harus mengembalikan lebih dari satu kunci.
 
 Syntax
-array_rand(array, number)
-Nilai Parameter
-Parameter Deskripsi
-array Diperlukan. Menentukan array
-number Pilihan. Menentukan berapa banyak kunci acak yang akan dikembalikan
+> array_rand(array, number)
+> 
+> array Diperlukan. Menentukan array
+> number Pilihan. Menentukan berapa banyak kunci acak yang akan dikembalikan
 
 array_reduce()
 ------
@@ -348,12 +338,11 @@ Fungsi array_reduce() mengirimkan nilai-nilai dalam sebuah array ke dalam fungsi
 Catatan: Jika array kosong dan nilai awal tidak diberikan, fungsi ini akan mengembalikan NULL.
 
 Syntax
-array_reduce(array, myfunction, initial)
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan array
-myfunction Wajib. Menentukan nama fungsi
-initial Opsional. Menentukan nilai awal yang akan dikirimkan ke fungsi
+> array_reduce(array, myfunction, initial)
+> 
+> array Wajib. Menentukan array
+> myfunction Wajib. Menentukan nama fungsi
+> initial Opsional. Menentukan nilai awal yang akan dikirimkan ke fungsi
 
 array_replace()
 ------
@@ -372,12 +361,11 @@ Jika beberapa array digunakan, nilai dari array yang lebih akhir akan menimpa ya
 Tip: Gunakan array_replace_recursive() untuk menggantikan nilai dari array1 dengan nilai dari array yang mengikuti secara rekursif.
 
 Syntax
-array_replace(array1, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Menentukan sebuah array
-array2 Opsional. Menentukan sebuah array yang akan menggantikan nilai dari array1
-array3,... Opsional. Menentukan beberapa array untuk menggantikan nilai dari array1 dan array2, dll. Nilai dari array yang lebih akhir akan menimpa yang sebelumnya.
+> array_replace(array1, array2, array3, ...)
+> 
+> array1 Wajib. Menentukan sebuah array
+> array2 Opsional. Menentukan sebuah array yang akan menggantikan nilai dari array1
+> array3,... Opsional. Menentukan beberapa array untuk menggantikan nilai dari array1 dan array2, dll. Nilai dari array yang lebih akhir akan menimpa yang sebelumnya.
 
 array_replace_recursive()
 ------
@@ -392,12 +380,11 @@ Jika kunci dari array1 ada di array2, nilai dari array1 akan digantikan oleh nil
 Catatan: Jika Anda tidak menentukan kunci untuk setiap array, fungsi ini akan berperilaku sama persis dengan fungsi array_replace ().
 
 Syntax
-array_replace_recursive (array1, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Menentukan sebuah array
-array2 Opsional. Menentukan sebuah array yang akan menggantikan nilai dari array1
-array3,... Opsional. Menentukan lebih banyak array untuk menggantikan nilai dari array1 dan array2, dll. Nilai dari array yang lebih baru akan menimpa yang sebelumnya.
+> array_replace_recursive (array1, array2, array3, ...)
+> 
+> array1 Wajib. Menentukan sebuah array
+> array2 Opsional. Menentukan sebuah array yang akan menggantikan nilai dari array1
+> array3,... Opsional. Menentukan lebih banyak array untuk menggantikan nilai dari array1 dan array2, dll. Nilai dari array yang lebih baru akan menimpa yang sebelumnya.
 
 array_reverse()
 ------
@@ -406,13 +393,12 @@ array_reverse()
 Fungsi array_reverse () mengembalikan array dalam urutan terbalik.
 
 Syntax
-array_reverse(array, preserve)
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan array
-preserve Opsional. Menentukan apakah fungsi harus mempertahankan kunci array atau tidak. Nilai yang mungkin:
-benar
-salah
+> array_reverse(array, preserve)
+> 
+> array Wajib. Menentukan array
+> preserve Opsional. Menentukan apakah fungsi harus mempertahankan kunci array atau tidak. Nilai yang mungkin:
+> benar
+> salah
 
 array_search()
 ------
@@ -421,15 +407,14 @@ array_search()
 Fungsi array_search () mencari nilai dalam sebuah array dan mengembalikan kunci.
 
 Syntax
-array_search (nilai, array, strict)
-Nilai parameter
-Parameter Deskripsi
-nilai Diperlukan. Menentukan nilai yang dicari
-array Diperlukan. Menentukan array yang akan dicari
-strict Pilihan. Jika parameter ini diatur ke TRUE, maka fungsi ini akan mencari elemen yang identik dalam array. Nilai yang mungkin:
-benar
-salah - Default
-Ketika diatur ke benar, angka 5 tidak sama dengan string 5 (Lihat contoh 2)
+> array_search (nilai, array, strict)
+> 
+> nilai Diperlukan. Menentukan nilai yang dicari
+> array Diperlukan. Menentukan array yang akan dicari
+> strict Pilihan. Jika parameter ini diatur ke TRUE, maka fungsi ini akan mencari elemen yang identik dalam array. Nilai yang mungkin:
+> benar
+> salah - Default
+> Ketika diatur ke benar, angka 5 tidak sama dengan string 5
 
 array_shift()
 ------
@@ -440,10 +425,9 @@ Fungsi array_shift() menghapus elemen pertama dari sebuah array, dan mengembalik
 Catatan: Jika kunci pada array adalah numerik, semua elemen akan mendapatkan kunci baru, dimulai dari 0 dan bertambah satu (lihat contoh di bawah).
 
 Syntax
-array_shift(array)
-Nilai Parameter
-Parameter Deskripsi
-array Wajib. Menentukan sebuah array.
+> array_shift(array)
+> 
+> array Wajib. Menentukan sebuah array.
 
 
 
@@ -458,13 +442,12 @@ Tip: Anda dapat menambahkan satu nilai, atau sebanyak yang Anda inginkan.
 Catatan: Kunci numerik akan dimulai dari 0 dan meningkat sebanyak 1. Kunci string akan tetap sama.
 
 Syntax
-array_unshift (array, value1, value2, value3, ...)
-Nilai Parameter
-Parameter Keterangan
-array Diperlukan. Menentukan array
-value1 Opsional. Menentukan nilai yang akan dimasukkan (Diperlukan pada versi PHP sebelum 7.3)
-value2 Opsional. Menentukan nilai yang akan dimasukkan
-value3 Opsional. Menentukan nilai yang akan dimasukkan
+> array_unshift (array, value1, value2, value3, ...)
+> 
+> array Diperlukan. Menentukan array
+> value1 Opsional. Menentukan nilai yang akan dimasukkan (Diperlukan pada versi PHP sebelum 7.3)
+> value2 Opsional. Menentukan nilai yang akan dimasukkan
+> value3 Opsional. Menentukan nilai yang akan dimasukkan
 
 array_slice()
 ------
@@ -475,15 +458,14 @@ Fungsi array_slice() mengembalikan bagian-bagian tertentu dari sebuah array.
 Catatan: Jika array memiliki kunci string, array yang dikembalikan akan selalu mempertahankan kunci-kunci tersebut (lihat contoh 4).
 
 Syntax
-array_slice(array, start, length, preserve)
-Nilai Parameter
-Parameter Deskripsi
-array Wajib. Menentukan array
-start Wajib. Nilai numerik. Menentukan dari mana fungsi akan memulai slice. 0 = elemen pertama. Jika nilai ini diatur ke angka negatif, fungsi akan mulai memotong sejauh itu dari elemen terakhir. -2 berarti mulai pada elemen kedua terakhir dari array.
-length Opsional. Nilai numerik. Menentukan panjang array yang dikembalikan. Jika nilai ini diatur ke angka negatif, fungsi akan berhenti memotong sejauh itu dari elemen terakhir. Jika nilai ini tidak diatur, fungsi akan mengembalikan semua elemen, dimulai dari posisi yang ditetapkan oleh parameter start.
-preserve Opsional. Menentukan apakah fungsi harus mempertahankan atau mengatur ulang kunci-kunci. Nilai yang mungkin:
-true - Mempertahankan kunci
-false - Default. Mengatur ulang kunci.
+> array_slice(array, start, length, preserve)
+> 
+> array Wajib. Menentukan array
+> start Wajib. Nilai numerik. Menentukan dari mana fungsi akan memulai slice. 0 = elemen pertama. Jika nilai ini diatur ke angka negatif, fungsi akan mulai memotong sejauh itu dari elemen terakhir. -2 berarti mulai pada elemen kedua terakhir dari array.
+> length Opsional. Nilai numerik. Menentukan panjang array yang dikembalikan. Jika nilai ini diatur ke angka negatif, fungsi akan berhenti memotong sejauh itu dari elemen terakhir. Jika nilai ini tidak diatur, fungsi akan mengembalikan semua elemen, dimulai dari posisi yang ditetapkan oleh parameter start.
+> preserve Opsional. Menentukan apakah fungsi harus mempertahankan atau mengatur ulang kunci-kunci. Nilai yang mungkin:
+> true - Mempertahankan kunci
+> false - Default. Mengatur ulang kunci.
 
 array_splice()
 ------
@@ -496,13 +478,12 @@ Tip: Jika fungsi tidak menghapus elemen apa pun (length=0), array yang diganti a
 Catatan: Kunci dalam array yang diganti tidak dipertahankan.
 
 Syntax
-array_splice(array, start, length, array)
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan sebuah array
-start Wajib. Nilai numerik. Menentukan dari mana fungsi akan mulai menghapus elemen. 0 = elemen pertama. Jika nilai ini diatur menjadi nomor negatif, fungsi akan mulai dari sejauh itu dari elemen terakhir. -2 berarti mulai dari elemen kedua terakhir dari array.
-length Opsional. Nilai numerik. Menentukan berapa banyak elemen yang akan dihapus, dan juga panjang array yang dikembalikan. Jika nilai ini diatur menjadi nomor negatif, fungsi akan berhenti sejauh itu dari elemen terakhir. Jika nilai ini tidak diatur, fungsi akan menghapus semua elemen, mulai dari posisi yang ditetapkan oleh parameter start.
-array Opsional. Menentukan sebuah array dengan elemen-elemen yang akan dimasukkan ke dalam array asli. Jika hanya satu elemen, itu bisa berupa string, dan tidak perlu menjadi array.
+> array_splice(array, start, length, array)
+> 
+> array Wajib. Menentukan sebuah array
+> start Wajib. Nilai numerik. Menentukan dari mana fungsi akan mulai menghapus elemen. 0 = elemen pertama. Jika nilai ini diatur menjadi nomor negatif, fungsi akan mulai dari sejauh itu dari elemen terakhir. -2 berarti mulai dari elemen kedua terakhir dari array.
+> length Opsional. Nilai numerik. Menentukan berapa banyak elemen yang akan dihapus, dan juga panjang array yang dikembalikan. Jika nilai ini diatur menjadi nomor negatif, fungsi akan berhenti sejauh itu dari elemen terakhir. Jika nilai ini tidak diatur, fungsi akan menghapus semua elemen, mulai dari posisi yang ditetapkan oleh parameter start.
+> array Opsional. Menentukan sebuah array dengan elemen-elemen yang akan dimasukkan ke dalam array asli. Jika hanya satu elemen, itu bisa berupa string, dan tidak perlu menjadi array.
 
 array_sum()
 ------
@@ -511,10 +492,9 @@ array_sum()
 Fungsi array_sum() mengembalikan jumlah dari semua nilai dalam sebuah array.
 
 Syntax
-array_sum(array)
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan array yang akan dijumlahkan.
+> array_sum(array)
+> 
+> array Wajib. Menentukan array yang akan dijumlahkan.
 
 array_unique()
 ------
@@ -525,15 +505,14 @@ Fungsi array_unique () menghapus nilai duplikat dari sebuah array. Jika dua atau
 Catatan: Array yang dikembalikan akan menjaga jenis kunci item array pertama.
 
 Syntax
-array_unique(array, sorttype)
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan sebuah array
-sorttype Opsional. Menentukan bagaimana cara membandingkan elemen / item array. Nilai yang mungkin:
-SORT_STRING - Default. Membandingkan item sebagai string
-SORT_REGULAR - Membandingkan item secara normal (tidak mengubah tipe)
-SORT_NUMERIC - Membandingkan item secara numerik
-SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokalisasi saat ini
+> array_unique(array, sorttype)
+> 
+> array Wajib. Menentukan sebuah array
+> sorttype Opsional. Menentukan bagaimana cara membandingkan elemen / item array. Nilai yang mungkin:
+> SORT_STRING - Default. Membandingkan item sebagai string
+> SORT_REGULAR - Membandingkan item secara normal (tidak mengubah tipe)
+> SORT_NUMERIC - Membandingkan item secara numerik
+> SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokalisasi saat ini
 
 array_values()
 ------
@@ -544,10 +523,9 @@ Fungsi array_values () mengembalikan sebuah array yang berisi semua nilai dari s
 Tips: Array yang dikembalikan akan memiliki kunci numerik, dimulai dari 0 dan meningkat sebesar 1.
 
 Syntax
-array_values (array)
-Nilai Parameter
-Parameter Keterangan
-array Diperlukan. Menentukan sebuah array.
+> array_values (array)
+> 
+> array Diperlukan. Menentukan sebuah array.
 
 array_walk()
 ------
@@ -560,12 +538,11 @@ Catatan: Anda dapat mengubah nilai elemen array dalam fungsi yang ditentukan pen
 Tip: Untuk bekerja dengan array yang lebih dalam (array di dalam array), gunakan fungsi array_walk_recursive ().
 
 Syntax
-array_walk (array, myfunction, parameter...)
-Nilai Parameter
-Parameter Keterangan
-array Dibutuhkan. Menentukan sebuah array
-myfunction Dibutuhkan. Nama fungsi yang ditentukan pengguna
-parameter,... Optional. Menentukan parameter untuk fungsi yang ditentukan pengguna. Anda dapat menugaskan satu parameter ke fungsi, atau sebanyak yang Anda inginkan.
+> array_walk (array, myfunction, parameter...)
+> 
+> array Dibutuhkan. Menentukan sebuah array
+> myfunction Dibutuhkan. Nama fungsi yang ditentukan pengguna
+> parameter,... Optional. Menentukan parameter untuk fungsi yang ditentukan pengguna. Anda dapat menugaskan satu parameter ke fungsi, atau sebanyak yang Anda inginkan.
 
 array_walk_recursive()
 ------
@@ -574,12 +551,11 @@ array_walk_recursive()
 Fungsi array_walk_recursive() menjalankan setiap elemen array dalam sebuah fungsi yang ditentukan oleh pengguna. Kunci dan nilai array adalah parameter dalam fungsi tersebut. Perbedaan antara fungsi ini dan fungsi array_walk() adalah bahwa dengan fungsi ini Anda bisa bekerja dengan array yang lebih dalam (array di dalam array).
 
 Syntax
-array_walk_recursive(array, myfunction, parameter...)
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan array
-myfunction Wajib. Nama fungsi yang ditentukan oleh pengguna
-parameter,... Opsional. Menentukan parameter untuk fungsi yang ditentukan oleh pengguna. Anda dapat menetapkan satu parameter ke fungsi, atau sebanyak yang Anda inginkan.
+> array_walk_recursive(array, myfunction, parameter...)
+> 
+> array Wajib. Menentukan array
+> myfunction Wajib. Nama fungsi yang ditentukan oleh pengguna
+> parameter,... Opsional. Menentukan parameter untuk fungsi yang ditentukan oleh pengguna. Anda dapat menetapkan satu parameter ke fungsi, atau sebanyak yang Anda inginkan.
 
 
 
@@ -595,12 +571,11 @@ Fungsi array_diff() membandingkan nilai dari dua (atau lebih) array, dan mengemb
 Fungsi ini membandingkan nilai dari dua (atau lebih) array, dan mengembalikan sebuah array yang berisi entri dari array1 yang tidak ada di array2 atau array3, dll.
 
 Syntax
-array_diff(array1, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array untuk dibandingkan
-array2 Wajib. Array untuk dibandingkan
-array3,... Opsional. Array lain untuk dibandingkan
+> array_diff(array1, array2, array3, ...)
+> 
+> array1 Wajib. Array untuk dibandingkan
+> array2 Wajib. Array untuk dibandingkan
+> array3,... Opsional. Array lain untuk dibandingkan
 
 array_udiff()
 ------
@@ -613,13 +588,12 @@ Catatan: Fungsi ini menggunakan fungsi yang ditentukan pengguna untuk membanding
 Fungsi ini membandingkan nilai dari dua (atau lebih) array, dan mengembalikan array yang berisi entri dari array1 yang tidak ada di array2 atau array3, dll.
 
 Syntax
-array_udiff(array1, array2, array3, ..., myfunction)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array untuk dibandingkan
-array2 Wajib. Array untuk dibandingkan
-array3,... Opsional. Array lain untuk dibandingkan
-myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> array_udiff(array1, array2, array3, ..., myfunction)
+> 
+> array1 Wajib. Array untuk dibandingkan
+> array2 Wajib. Array untuk dibandingkan
+> array3,... Opsional. Array lain untuk dibandingkan
+> myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 array_diff_assoc()
 ------
@@ -630,12 +604,11 @@ Fungsi array_diff_assoc () membandingkan kunci dan nilai dari dua (atau lebih) a
 Fungsi ini membandingkan kunci dan nilai dari dua (atau lebih) array, dan mengembalikan array yang berisi entri dari array1 yang tidak ada di array2 atau array3, dll.
 
 Syntax
-array_diff_assoc (array1, array2, array3...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array untuk dibandingkan
-array2 Wajib. Array untuk dibandingkan
-array3,... Optional. Array lain untuk dibandingkan.
+> array_diff_assoc (array1, array2, array3...)
+> 
+> array1 Wajib. Array untuk dibandingkan
+> array2 Wajib. Array untuk dibandingkan
+> array3,... Optional. Array lain untuk dibandingkan.
 
 array_diff_uassoc()
 ------
@@ -648,13 +621,12 @@ Catatan: Fungsi ini menggunakan fungsi yang didefinisikan pengguna untuk memband
 Fungsi ini membandingkan kunci dan nilai dari dua (atau lebih) array, dan mengembalikan array yang berisi entri dari array1 yang tidak ada di array2 atau array3, dst.
 
 Syntax
-array_diff_uassoc (array1, array2, array3, ..., myfunction)
-Nilai Parameter
-Parameter Deskripsi
-array1 Wajib. Array untuk dibandingkan
-array2 Wajib. Array yang akan dibandingkan
-array3,... Pilihan. Array lain yang akan dibandingkan
-myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> array_diff_uassoc (array1, array2, array3, ..., myfunction)
+> 
+> array1 Wajib. Array untuk dibandingkan
+> array2 Wajib. Array yang akan dibandingkan
+> array3,... Pilihan. Array lain yang akan dibandingkan
+> myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 array_udiff_assoc()
 ------
@@ -667,13 +639,12 @@ Catatan: Fungsi ini menggunakan fungsi bawaan untuk membandingkan kunci, dan fun
 Fungsi ini membandingkan kunci dan nilai dari dua (atau lebih) array, dan mengembalikan array yang berisi entri dari array1 yang tidak ada di array2 atau array3, dll.
 
 Sintaks
-array_udiff_assoc (array1, array2, array3, ..., myfunction)
-Nilai Parameter
-Parameter Deskripsi
-array1 Wajib. Array untuk dibandingkan dari
-array2 Wajib. Array untuk dibandingkan terhadap
-array3, ... Pilihan. Lebih banyak array untuk dibandingkan terhadap
-myfunction Wajib. String yang mendefinisikan fungsi perbandingan yang dapat dipanggil. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau> dari 0 jika argumen pertama <, =, atau> dari argumen kedua.
+> array_udiff_assoc (array1, array2, array3, ..., myfunction)
+> 
+> array1 Wajib. Array untuk dibandingkan dari
+> array2 Wajib. Array untuk dibandingkan terhadap
+> array3, ... Pilihan. Lebih banyak array untuk dibandingkan terhadap
+> myfunction Wajib. String yang mendefinisikan fungsi perbandingan yang dapat dipanggil. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau> dari 0 jika argumen pertama <, =, atau> dari argumen kedua.
 
 array_udiff_uassoc()
 ------
@@ -686,16 +657,15 @@ Catatan: Fungsi ini menggunakan dua fungsi yang ditentukan oleh pengguna untuk p
 Fungsi ini membandingkan kunci dan nilai dari dua (atau lebih) array, dan mengembalikan array yang berisi entri dari array1 yang tidak ada di array2 atau array3, dll.
 
 Syntax
-array_udiff_uassoc(array1, array2, array3, ..., myfunc_key, myfunc_value)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array yang dibandingkan
-array2 Wajib. Array yang dibandingkan dengan
-array3,... Opsional. Array yang dibandingkan dengan
-myfunc_key Wajib. Nama fungsi yang ditentukan oleh pengguna untuk membandingkan kunci array.
-Sebuah string yang mendefinisikan fungsi perbandingan yang dapat dipanggil. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua
-myfunc_value Wajib. Nama fungsi yang ditentukan oleh pengguna untuk membandingkan nilai array.
-Sebuah string yang mendefinisikan fungsi perbandingan yang dapat dipanggil. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> array_udiff_uassoc(array1, array2, array3, ..., myfunc_key, myfunc_value)
+> 
+> array1 Wajib. Array yang dibandingkan
+> array2 Wajib. Array yang dibandingkan dengan
+> array3,... Opsional. Array yang dibandingkan dengan
+> myfunc_key Wajib. Nama fungsi yang ditentukan oleh pengguna untuk membandingkan kunci array.
+> Sebuah string yang mendefinisikan fungsi perbandingan yang dapat dipanggil. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua
+> myfunc_value Wajib. Nama fungsi yang ditentukan oleh pengguna untuk membandingkan nilai array.
+> Sebuah string yang mendefinisikan fungsi perbandingan yang dapat dipanggil. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 array_diff_key()
 ------
@@ -706,9 +676,8 @@ Fungsi array_diff_key () membandingkan kunci dari dua (atau lebih) array, dan me
 Fungsi ini membandingkan kunci dari dua (atau lebih) array, dan mengembalikan array yang berisi entri dari array1 yang tidak ada di array2 atau array3, dll.
 
 Syntax
-array_diff_key (array1, array2, array3, ...)
-Parameter Nilai
-Parameter Keterangan
+> array_diff_key (array1, array2, array3, ...)
+> 
 array1 Wajib. Array untuk dibandingkan
 array2 Wajib. Array untuk dibandingkan
 array3,... Opsional. Array lain untuk dibandingkan
@@ -725,12 +694,11 @@ Fungsi ini membandingkan kunci dari dua (atau lebih) array, dan mengembalikan ar
 
 Syntax
 array_diff_ukey(array1, array2, array3, ..., myfunction)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array untuk dibandingkan
-array2 Wajib. Array untuk dibandingkan
-array3,... Opsional. Array lain untuk dibandingkan
-myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> 
+> array1 Wajib. Array untuk dibandingkan
+> array2 Wajib. Array untuk dibandingkan
+> array3,... Opsional. Array lain untuk dibandingkan
+> myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 array_intersect()
 ------
@@ -742,11 +710,10 @@ Fungsi ini membandingkan nilai dari dua atau lebih array, dan mengembalikan arra
 
 Syntax
 array_intersect(array1, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array untuk dibandingkan
-array2 Wajib. Array yang akan dibandingkan
-array3,... Tidak wajib. Array tambahan untuk dibandingkan
+> 
+> array1 Wajib. Array untuk dibandingkan
+> array2 Wajib. Array yang akan dibandingkan
+> array3,... Tidak wajib. Array tambahan untuk dibandingkan
 
 array_uintersect()
 ------
@@ -760,12 +727,11 @@ Fungsi ini membandingkan nilai dari dua (atau lebih) array, dan mengembalikan ar
 
 Syntax
 array_uintersect (array1, array2, array3, ..., myfunction)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array yang akan dibandingkan
-array2 Wajib. Array yang akan dibandingkan
-array3, ... Opsional. Array lain untuk dibandingkan
-myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan integer <, =, atau> dari 0 jika argumen pertama <, =, atau> dari argumen kedua.
+> 
+> array1 Wajib. Array yang akan dibandingkan
+> array2 Wajib. Array yang akan dibandingkan
+> array3, ... Opsional. Array lain untuk dibandingkan
+> myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan integer <, =, atau> dari 0 jika argumen pertama <, =, atau> dari argumen kedua.
 
 array_intersect_assoc()
 ------
@@ -776,12 +742,11 @@ Fungsi array_intersect_assoc() membandingkan kunci dan nilai dari dua (atau lebi
 Fungsi ini membandingkan kunci dan nilai dari dua atau lebih array, dan mengembalikan array yang berisi entri dari array1 yang ada di array2, array3, dan seterusnya.
 
 Syntax
-array_intersect_assoc(array1,array2,array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array pertama yang akan dibandingkan dengan yang lainnya
-array2 Wajib. Array yang akan dibandingkan dengan array pertama
-array3,... Opsional. Array yang akan dibandingkan dengan array pertama
+> array_intersect_assoc(array1,array2,array3, ...)
+> 
+> array1 Wajib. Array pertama yang akan dibandingkan dengan yang lainnya
+> array2 Wajib. Array yang akan dibandingkan dengan array pertama
+> array3,... Opsional. Array yang akan dibandingkan dengan array pertama
 
 array_intersect_uassoc()
 ------
@@ -794,13 +759,12 @@ Catatan: Fungsi ini menggunakan fungsi yang ditentukan pengguna untuk membanding
 Fungsi ini membandingkan kunci dan nilai dari dua atau lebih array, dan mengembalikan array yang berisi entri dari array1 yang ada di array2, array3, dll.
 
 Syntax
-array_intersect_uassoc (array1, array2, array3, ..., myfunction)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array pertama adalah array yang akan dibandingkan dengan yang lainnya
-array2 Wajib. Array yang akan dibandingkan dengan array pertama
-array3,... Opsional. Array yang akan dibandingkan dengan array pertama
-myfunction Wajib. String yang mendefinisikan fungsi perbandingan yang dapat dipanggil. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau> dari 0 jika argumen pertama <, =, atau> dari argumen kedua.
+> array_intersect_uassoc (array1, array2, array3, ..., myfunction)
+> 
+> array1 Wajib. Array pertama adalah array yang akan dibandingkan dengan yang lainnya
+> array2 Wajib. Array yang akan dibandingkan dengan array pertama
+> array3,... Opsional. Array yang akan dibandingkan dengan array pertama
+> myfunction Wajib. String yang mendefinisikan fungsi perbandingan yang dapat dipanggil. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau> dari 0 jika argumen pertama <, =, atau> dari argumen kedua.
 
 array_uintersect_assoc()
 ------
@@ -813,13 +777,12 @@ Catatan: Fungsi ini menggunakan fungsi bawaan untuk membandingkan kunci, dan fun
 Fungsi ini membandingkan kunci dan nilai dari dua (atau lebih) array, dan mengembalikan array yang berisi entri dari array1 yang ada di array2, array3, dst.
 
 Syntax
-array_uintersect_assoc(array1, array2, array3, ..., myfunction)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array untuk dibandingkan
-array2 Wajib. Array untuk dibandingkan
-array3,... Optional. Array tambahan untuk dibandingkan
-myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> array_uintersect_assoc(array1, array2, array3, ..., myfunction)
+> 
+> array1 Wajib. Array untuk dibandingkan
+> array2 Wajib. Array untuk dibandingkan
+> array3,... Optional. Array tambahan untuk dibandingkan
+> myfunction Wajib. String yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 array_uintersect_uassoc()
 ------
@@ -832,16 +795,15 @@ Catatan: Fungsi ini menggunakan dua fungsi yang ditentukan oleh pengguna untuk p
 Fungsi ini membandingkan kunci dan nilai dari dua (atau lebih) array, dan mengembalikan sebuah array yang berisi entri dari array1 yang ada di array2, array3, dan sebagainya.
 
 Syntax
-array_uintersect_uassoc(array1, array2, array3, ..., myfunc_key, myfunc_value)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array yang akan dibandingkan
-array2 Wajib. Array untuk dibandingkan
-array3,... Opsional. Array lain untuk dibandingkan
-myfunc_key Wajib. Nama fungsi yang ditentukan oleh pengguna untuk membandingkan kunci array.
-Sebuah string yang mendefinisikan fungsi pemanggil perbandingan. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua
+> array_uintersect_uassoc(array1, array2, array3, ..., myfunc_key, myfunc_value)
+> 
+> array1 Wajib. Array yang akan dibandingkan
+> array2 Wajib. Array untuk dibandingkan
+> array3,... Opsional. Array lain untuk dibandingkan
+> myfunc_key Wajib. Nama fungsi yang ditentukan oleh pengguna untuk membandingkan kunci array.
+> Sebuah string yang mendefinisikan fungsi pemanggil perbandingan. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua
 myfunc_value Wajib. Nama fungsi yang ditentukan oleh pengguna untuk membandingkan nilai array.
-Sebuah string yang mendefinisikan fungsi pemanggil perbandingan. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> Sebuah string yang mendefinisikan fungsi pemanggil perbandingan. Fungsi perbandingan harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 
 array_intersect_key()
@@ -853,12 +815,11 @@ Fungsi array_intersect_key () membandingkan kunci dari dua (atau lebih) array, d
 Fungsi ini membandingkan kunci dari dua atau lebih array, dan mengembalikan array yang berisi entri dari array1 yang ada di array2, array3, dan seterusnya.
 
 Syntax
-array_intersect_key(array1, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array pertama adalah array yang akan dibandingkan dengan yang lainnya
-array2 Wajib. Array yang akan dibandingkan dengan array pertama
-array3,... Opsional. Array yang akan dibandingkan dengan array pertama
+> array_intersect_key(array1, array2, array3, ...)
+> 
+> array1 Wajib. Array pertama adalah array yang akan dibandingkan dengan yang lainnya
+> array2 Wajib. Array yang akan dibandingkan dengan array pertama
+> array3,... Opsional. Array yang akan dibandingkan dengan array pertama
 
 array_intersect_ukey()
 ------
@@ -871,13 +832,12 @@ Catatan: Fungsi ini menggunakan fungsi yang ditentukan pengguna untuk membanding
 Fungsi ini membandingkan kunci dari dua atau lebih array, dan mengembalikan sebuah array yang berisi entri dari array1 yang hadir di array2, array3, dan seterusnya.
 
 Syntax
-array_intersect_ukey(array1, array2, array3, ..., myfunction)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Array pertama adalah array yang akan dibandingkan dengan yang lainnya
-array2 Wajib. Array yang akan dibandingkan dengan array pertama
-array3,... Opsional. Array yang akan dibandingkan dengan array pertama
-myfunction Wajib. Sebuah string yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> array_intersect_ukey(array1, array2, array3, ..., myfunction)
+> 
+> array1 Wajib. Array pertama adalah array yang akan dibandingkan dengan yang lainnya
+> array2 Wajib. Array yang akan dibandingkan dengan array pertama
+> array3,... Opsional. Array yang akan dibandingkan dengan array pertama
+> myfunction Wajib. Sebuah string yang mendefinisikan fungsi pembanding yang dapat dipanggil. Fungsi pembanding harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 ------
 
@@ -894,22 +854,21 @@ Catatan: Kunci string akan dipertahankan, tetapi kunci numerik akan diindeks ula
 Catatan: Anda dapat menetapkan parameter sortorder dan sorttype setelah setiap array. Jika tidak ditentukan, setiap parameter array menggunakan nilai default.
 
 Syntax
-array_multisort(array1, sortorder, sorttype, array2, array3, ...)
-Nilai Parameter
-Parameter Keterangan
-array1 Wajib. Menentukan sebuah array
-sortorder Opsional. Menentukan urutan pengurutan. Nilai yang mungkin:
-SORT_ASC - Default. Urutkan secara menaik (A-Z)
-SORT_DESC - Urutkan secara menurun (Z-A)
-sorttype Opsional. Menentukan tipe yang digunakan saat membandingkan elemen. Nilai yang mungkin:
-SORT_REGULAR - Default. Bandingkan elemen secara normal (ASCII Standar)
-SORT_NUMERIC - Bandingkan elemen sebagai nilai numerik
-SORT_STRING - Bandingkan elemen sebagai nilai string
-SORT_LOCALE_STRING - Bandingkan elemen sebagai string, berdasarkan konfigurasi wilayah saat ini (dapat diubah menggunakan setlocale())
-SORT_NATURAL - Bandingkan elemen sebagai string menggunakan "urutan natural" seperti natsort()
-SORT_FLAG_CASE - Dapat digabungkan (bitwise OR) dengan SORT_STRING atau SORT_NATURAL untuk mengurutkan string secara tidak peka terhadap huruf besar-kecil
-array2 Opsional. Menentukan sebuah array
-array3 Opsional. Menentukan sebuah array
+> array_multisort(array1, sortorder, sorttype, array2, array3, ...)
+> 
+> array1 Wajib. Menentukan sebuah array
+> sortorder Opsional. Menentukan urutan pengurutan. Nilai yang mungkin:
+> SORT_ASC - Default. Urutkan secara menaik (A-Z)
+> SORT_DESC - Urutkan secara menurun (Z-A)
+> sorttype Opsional. Menentukan tipe yang digunakan saat membandingkan elemen. Nilai yang mungkin:
+> SORT_REGULAR - Default. Bandingkan elemen secara normal (ASCII Standar)
+> SORT_NUMERIC - Bandingkan elemen sebagai nilai numerik
+> SORT_STRING - Bandingkan elemen sebagai nilai string
+> SORT_LOCALE_STRING - Bandingkan elemen sebagai string, berdasarkan konfigurasi wilayah saat ini (dapat diubah menggunakan setlocale())
+> SORT_NATURAL - Bandingkan elemen sebagai string menggunakan "urutan natural" seperti natsort()
+> SORT_FLAG_CASE - Dapat digabungkan (bitwise OR) dengan SORT_STRING atau SORT_NATURAL untuk mengurutkan string secara tidak peka terhadap huruf besar-kecil
+> array2 Opsional. Menentukan sebuah array
+> array3 Opsional. Menentukan sebuah array
 
 natcasesort()
 ------
@@ -923,8 +882,7 @@ Fungsi ini tidak bersifat case-sensitive.
 
 Syntax
 natcasesort(array)
-Nilai Parameter
-Parameter Keterangan
+> 
 array Wajib. Menentukan array yang akan diurutkan
 
 natsort()
@@ -937,8 +895,7 @@ Dalam algoritma alami, angka 2 lebih kecil dari angka 10. Dalam pengurutan kompu
 
 Syntax
 natsort(array)
-Nilai Parameter
-Parameter Keterangan
+> 
 array Wajib. Menentukan array yang akan diurutkan.
 
 sort()
@@ -949,17 +906,19 @@ Fungsi sort() digunakan untuk mengurutkan array yang terindeks secara ascending 
 
 Tips: Gunakan fungsi rsort() untuk mengurutkan array secara descending (dari yang terbesar hingga terkecil).
 
-Syntax sort(array, sorttype)
-Nilai Parameter:
-Parameter Deskripsi
-array Wajib. Menentukan array yang akan diurutkan
-sorttype Opsional. Menentukan bagaimana cara membandingkan elemen/item pada array. Nilai yang mungkin:
-0 = SORT_REGULAR - Default. Membandingkan item secara normal (tidak mengubah tipe data)
-1 = SORT_NUMERIC - Membandingkan item secara numerik
-2 = SORT_STRING - Membandingkan item sebagai string
-3 = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan local saat ini
-4 = SORT_NATURAL - Membandingkan item sebagai string menggunakan natural ordering
-5 = SORT_FLAG_CASE - Dapat digabungkan dengan SORT_STRING atau SORT_NATURAL untuk mengurutkan string secara case-insensitive.
+Syntax
+> sort(array, sorttype)
+> 
+> **array** ___Wajib___
+> - Menentukan array yang akan diurutkan
+> **sorttype** ___Opsional___
+> - Menentukan cara untuk membandingkan elemen/item array. Nilai yang mungkin:
+> 	- **0** = SORT_REGULAR - Default. Membandingkan item secara normal (tidak mengubah tipe data)
+> 	- **1** = SORT_NUMERIC - Membandingkan item secara numerik
+>  	- **2** = SORT_STRING - Membandingkan item sebagai string
+> 	- **3** = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokal saat ini
+> 	- **4** = SORT_NATURAL - Membandingkan item sebagai string menggunakan urutan alami
+> 	- **5** = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar-kecil
 
 asort()
 ------
@@ -972,17 +931,18 @@ Tips: Gunakan fungsi arsort() untuk mengurutkan array asosiatif secara menurun (
 Tips: Gunakan fungsi ksort() untuk mengurutkan array asosiatif secara menaik (ascending) berdasarkan kunci (key) dari elemen (item) array.
 
 Syntax
-asort(array, sorttype)
-Parameter Value
-Parameter Keterangan
-array Wajib. Menentukan array yang akan diurutkan.
-sorttype Opsional. Menentukan bagaimana cara membandingkan elemen (item) array. Nilai yang mungkin:
-0 = SORT_REGULAR - Default. Membandingkan item secara normal (tanpa mengubah tipe data)
-1 = SORT_NUMERIC - Membandingkan item secara numerik
-2 = SORT_STRING - Membandingkan item sebagai string
-3 = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokal saat ini
-4 = SORT_NATURAL - Membandingkan item sebagai string menggunakan urutan alami
-5 = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar dan kecil.
+> asort(array, sorttype)
+> 
+> **array** ___Wajib___
+> - Menentukan array yang akan diurutkan
+> **sorttype** ___Opsional___
+> - Menentukan cara untuk membandingkan elemen/item array. Nilai yang mungkin:
+> 	- **0** = SORT_REGULAR - Default. Membandingkan item secara normal (tidak mengubah tipe data)
+> 	- **1** = SORT_NUMERIC - Membandingkan item secara numerik
+>  	- **2** = SORT_STRING - Membandingkan item sebagai string
+> 	- **3** = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokal saat ini
+> 	- **4** = SORT_NATURAL - Membandingkan item sebagai string menggunakan urutan alami
+> 	- **5** = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar-kecil
 
 rsort()
 ------
@@ -993,17 +953,18 @@ Fungsi rsort() mengurutkan array yang diindeks secara menurun.
 Tips: Gunakan fungsi sort() untuk mengurutkan array yang diindeks secara menaik.
 
 Syntax
-rsort(array, sorttype)
-Nilai Parameter
-Parameter Deskripsi
-array Wajib. Menentukan array yang akan diurutkan
-sorttype Opsional. Menentukan cara membandingkan elemen/item array. Nilai yang mungkin:
-0 = SORT_REGULAR - Default. Membandingkan item secara normal (tidak mengubah jenis)
-1 = SORT_NUMERIC - Membandingkan item secara numerik
-2 = SORT_STRING - Membandingkan item sebagai string
-3 = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokalisasi saat ini
-4 = SORT_NATURAL - Membandingkan item sebagai string menggunakan pengurutan alami
-5 = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar-kecil
+> rsort(array, sorttype)
+> 
+> **array** ___Wajib___
+> - Menentukan array yang akan diurutkan
+> **sorttype** ___Opsional___
+> - Menentukan cara untuk membandingkan elemen/item array. Nilai yang mungkin:
+> 	- **0** = SORT_REGULAR - Default. Membandingkan item secara normal (tidak mengubah tipe data)
+> 	- **1** = SORT_NUMERIC - Membandingkan item secara numerik
+>  	- **2** = SORT_STRING - Membandingkan item sebagai string
+> 	- **3** = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokal saat ini
+> 	- **4** = SORT_NATURAL - Membandingkan item sebagai string menggunakan urutan alami
+> 	- **5** = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar-kecil
 
 usort()
 ------
@@ -1016,12 +977,12 @@ Tips: Gunakan fungsi uksort() untuk mengurutkan array berdasarkan kunci dengan m
 Tips: Gunakan fungsi uasort() untuk mengurutkan array berdasarkan nilai (dan mempertahankan asosiasi indeks) dengan menggunakan fungsi perbandingan yang ditentukan pengguna.
 
 Syntax
-usort(array, callback)
-
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan array yang akan diurutkan
-callback Wajib. Fungsi perbandingan. Harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> usort(array, callback)
+> 
+> **array** ___Wajib___
+> - Menentukan array yang akan diurutkan
+> **callback** ___Wajib___
+> - Fungsi perbandingan. Harus mengembalikan bilangan bulat <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 ksort()
 ------
@@ -1033,17 +994,19 @@ Tips: Gunakan fungsi krsort() untuk mengurutkan array asosiatif secara descendin
 
 Tips: Gunakan fungsi asort() untuk mengurutkan array asosiatif secara ascending (menaik), berdasarkan nilai (value) dari setiap elemen pada array.
 
-Syntax ksort(array, sorttype)
-
-Parameter Nilai
-array Wajib. Menentukan array yang akan diurutkan
-sorttype Opsional. Menentukan cara untuk membandingkan elemen/item pada array. Nilai yang mungkin:
-0 = SORT_REGULAR - Default. Membandingkan item secara normal (tanpa mengubah tipe data)
-1 = SORT_NUMERIC - Membandingkan item secara numerik
-2 = SORT_STRING - Membandingkan item sebagai string
-3 = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan setting locale saat ini
-4 = SORT_NATURAL - Membandingkan item sebagai string dengan menggunakan urutan alami
-5 = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar-kecil
+Syntax
+> ksort(array, sorttype)
+> 
+> **array** ___Wajib___
+> - Menentukan array yang akan diurutkan
+> **sorttype** ___Opsional___
+> - Menentukan cara untuk membandingkan elemen/item array. Nilai yang mungkin:
+> 	- **0** = SORT_REGULAR - Default. Membandingkan item secara normal (tidak mengubah tipe data)
+> 	- **1** = SORT_NUMERIC - Membandingkan item secara numerik
+>  	- **2** = SORT_STRING - Membandingkan item sebagai string
+> 	- **3** = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokal saat ini
+> 	- **4** = SORT_NATURAL - Membandingkan item sebagai string menggunakan urutan alami
+> 	- **5** = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar-kecil
 
 krsort()
 ------
@@ -1056,17 +1019,18 @@ Tips: Gunakan fungsi ksort() untuk mengurutkan sebuah array asosiatif secara men
 Tips: Gunakan fungsi arsort() untuk mengurutkan sebuah array asosiatif secara menurun, berdasarkan nilai.
 
 Syntax
-krsort(array, sorttype)
-Nilai Parameter
-Parameter Keterangan
-array Wajib. Menentukan array yang akan diurutkan
-sorttype Opsional. Menentukan cara untuk membandingkan elemen/item array. Nilai yang mungkin:
-0 = SORT_REGULAR - Default. Membandingkan item secara normal (tidak mengubah tipe data)
-1 = SORT_NUMERIC - Membandingkan item secara numerik
-2 = SORT_STRING - Membandingkan item sebagai string
-3 = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokal saat ini
-4 = SORT_NATURAL - Membandingkan item sebagai string menggunakan urutan alami
-5 = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar-kecil
+> krsort(array, sorttype)
+> 
+> **array** ___Wajib___
+> - Menentukan array yang akan diurutkan
+> **sorttype** ___Opsional___
+> - Menentukan cara untuk membandingkan elemen/item array. Nilai yang mungkin:
+> 	- **0** = SORT_REGULAR - Default. Membandingkan item secara normal (tidak mengubah tipe data)
+> 	- **1** = SORT_NUMERIC - Membandingkan item secara numerik
+>  	- **2** = SORT_STRING - Membandingkan item sebagai string
+> 	- **3** = SORT_LOCALE_STRING - Membandingkan item sebagai string, berdasarkan lokal saat ini
+> 	- **4** = SORT_NATURAL - Membandingkan item sebagai string menggunakan urutan alami
+> 	- **5** = SORT_FLAG_CASE - Membandingkan item sebagai string dengan memperhatikan huruf besar-kecil
 
 uksort()
 ------
@@ -1079,11 +1043,12 @@ Tips: Gunakan fungsi uasort() untuk mengurutkan sebuah array berdasarkan nilai (
 Tips: Gunakan fungsi usort() untuk mengurutkan sebuah array berdasarkan nilai menggunakan sebuah fungsi perbandingan yang ditentukan oleh pengguna.
 
 Syntax
-uksort(array, callback)
-Parameter Nilai
-Parameter Keterangan
-array Wajib. Menentukan array yang akan diurutkan.
-callback Wajib. Sebuah fungsi perbandingan. Harus mengembalikan nilai integer <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
+> uksort(array, callback)
+> 
+> **array** ___Wajib___
+> - Menentukan array yang akan diurutkan.
+> **callback** ___Wajib___
+> - Sebuah fungsi perbandingan. Harus mengembalikan nilai integer <, =, atau > dari 0 jika argumen pertama <, =, atau > dari argumen kedua.
 
 arsort()
 ------
